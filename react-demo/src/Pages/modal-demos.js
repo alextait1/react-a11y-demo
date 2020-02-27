@@ -1,16 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import ReactAriaModal from '../components/react-aria-modal-demo';
 import ReactModalDemo from '../components/react-modal-demo';
 
-class ModalDemo extends React.Component{
+export const ModalDemo = () => {
 
-    componentDidMount(){
+    useEffect(()=>{
         document.title = "Modal Demo";
         let target = document.querySelectorAll('h1, h2, h3, h4, h5, h6')[0];
         target.setAttribute('tabindex', "-1");
         target.focus();
-    }
-    render(){
+    }, []);
+    
         return(
             <div className="modal-demo-page">
                 <h1>Modals in React</h1>
@@ -49,7 +49,4 @@ class ModalDemo extends React.Component{
          
             </div>
         ) 
-    }
 }
-
-export default ModalDemo;

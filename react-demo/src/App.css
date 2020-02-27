@@ -1,4 +1,4 @@
-/* react-aria-modal styles */
+/*modal styles */
 
 .modal {
   background-color: white;
@@ -34,4 +34,25 @@ nav ul {
   display: flex;
   justify-content: space-between;
   width: 100%;;
+}
+
+/* Toast styles */
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.button-toast-container {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.save-announcement {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  background-color: peachpuff;
+  opacity: 1;
 }

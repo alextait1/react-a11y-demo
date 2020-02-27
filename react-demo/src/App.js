@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import ModalDemo from "./Pages/modal-demos";
+import { ModalDemo } from "./Pages/modal-demos";
 import FocusRouting from "./Pages/focus-management-and-routing";
-import { Home } from './components/home-component';
+import { Home } from './Pages/home';
+import { DynamicUpdates } from "./Pages/dynamic-updates";
 import {
   BrowserRouter as Router,
   Switch,
@@ -34,6 +35,9 @@ class App extends React.Component {
               <li>
                 <Link to="/focus-routing">Focus Management and Routing</Link>
               </li>
+              <li>
+                <Link to="/dynamic-updates">Dynamic updates and Announcements</Link>
+              </li>
             </ul>
           </nav>
   
@@ -45,6 +49,9 @@ class App extends React.Component {
             </Route>
             <Route exact path="/focus-routing">
               <FocusRouting />
+            </Route>
+            <Route exact path="/dynamic-updates">
+              <DynamicUpdates />
             </Route>
             <Route path="/">
               <Home />
