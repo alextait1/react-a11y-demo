@@ -25,22 +25,12 @@
   margin-top: 20px;
 }
 
-nav {
-  display: flex;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;;
-}
 
 /* Toast styles */
 
 .hidden {
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-in;
 }
 
 .button-toast-container {
@@ -55,4 +45,74 @@ nav ul {
   width: 200px;
   background-color: peachpuff;
   opacity: 1;
+}
+
+/* Button styles per paciello group*/
+button {
+  background-color: #1b75bc;
+  border: 1px solid #1b75bc;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 12px;
+  transition: all 0.2s ease-in;
+  height: 32px;
+}
+
+button:hover {
+  background-color: #286090;
+  border: 1px solid #286090;
+}
+
+/* Header/Nav styles per paciello group home page */
+
+header {
+  background: #F7F7F7;
+  height: 60px;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  padding: 0;
+}
+
+nav a {
+  border-bottom: 3.8px solid transparent;
+  padding-bottom: 1rem;
+  transition: border-bottom 0.3s;
+}
+nav a:hover {
+  border-bottom: 3.8px solid #D7D6D7;
+}
+
+nav a:focus, nav a:active {
+  border-bottom: 3.8px solid #286090;
+}
+
+/* Link styles per paciello group */
+
+a {
+  color: #1b75bc;
+}
+
+a:hover, a:focus {
+  color: #23527c;
+}
+
+/* Typograpgy per paciello group */
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+}
+
+/* Wrapper styles */
+.wrapper {
+  padding: 0 100px;
 }

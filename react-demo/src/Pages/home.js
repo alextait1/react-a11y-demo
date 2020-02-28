@@ -6,7 +6,8 @@ import React, {useEffect} from 'react';
       let target = document.querySelectorAll('h1, h2, h3, h4, h5, h6')[0];
       target.setAttribute('tabindex', "-1");
       target.focus();
-    }, [])
+    })
+    
     return (
       <div>
         <h1>React Accessibility Demos</h1>

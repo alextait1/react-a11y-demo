@@ -24,25 +24,28 @@ class App extends React.Component {
     return (
       <Router>
         <div className="App" id="application">
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/modal-demo">Modal Demos</Link>
-              </li>
-              <li>
-                <Link to="/focus-routing">Focus Management and Routing</Link>
-              </li>
-              <li>
-                <Link to="/dynamic-updates">Dynamic updates and Announcements</Link>
-              </li>
-            </ul>
-          </nav>
+          <header>
+            <nav className="wrapper">
+              <ul>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/modal-demo">Modal Demos</Link>
+                </li>
+                <li>
+                  <Link to="/focus-routing">Focus Management and Routing</Link>
+                </li>
+                <li>
+                  <Link to="/dynamic-updates">Dynamic updates and Announcements</Link>
+                </li>
+              </ul>
+            </nav>
+          </header>
   
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
+          <main className="wrapper">
           <Switch>
             <Route exact path="/modal-demo">
               <ModalDemo />
@@ -57,11 +60,11 @@ class App extends React.Component {
               <Home />
             </Route>
           </Switch>
+          </main>
         </div>
       </Router>
     );
   }
 }
-
 
 export default App;
